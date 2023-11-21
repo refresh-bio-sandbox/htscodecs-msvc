@@ -40,6 +40,10 @@ extern "C" {
 
 #include <stdint.h>
 
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+#endif
+
 /* Bit flags, deliberately mirroring BAM ones */
 #define FQZ_FREVERSE 16
 #define FQZ_FREAD2 128
